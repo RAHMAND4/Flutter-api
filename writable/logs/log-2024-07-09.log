@@ -1,0 +1,27 @@
+DEBUG - 2024-07-09 03:38:46 --> Data yang akan disimpan: {"judul":"tes","isi":"jkdcne o;epfnowefiefnoedfjdrnldnvibeovbropevb[eon reovopefnoep eivire v vopf vopropnvpinpire vfdbvfdvonvov[d","gambar":"1.jpg"}
+CRITICAL - 2024-07-09 03:48:48 --> CodeIgniter\Database\Exceptions\DatabaseException: Updates are not allowed unless they contain a "where" or "like" clause.
+[Method: PUT, Route: api/5]
+in SYSTEMPATH\Model.php on line 456.
+ 1 SYSTEMPATH\BaseModel.php(1028): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(865): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\Api.php(56): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Api->update(null)
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('D:\\laragon\\www\\ci-berita-22112010\\public\\index.php')
+CRITICAL - 2024-07-09 03:59:33 --> CodeIgniter\Database\Exceptions\DatabaseException: Updates are not allowed unless they contain a "where" or "like" clause.
+[Method: PUT, Route: api/5]
+in SYSTEMPATH\Model.php on line 456.
+ 1 SYSTEMPATH\BaseModel.php(1028): CodeIgniter\Model->doUpdate([], [...])
+ 2 SYSTEMPATH\Model.php(865): CodeIgniter\BaseModel->update([], [...])
+ 3 APPPATH\Controllers\Api.php(56): CodeIgniter\Model->update([], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Api->update([])
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('D:\\laragon\\www\\ci-berita-22112010\\public\\index.php')

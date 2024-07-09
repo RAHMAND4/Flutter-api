@@ -1,0 +1,156 @@
+ERROR - 2024-07-01 01:28:18 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\laragon\www\ci-berita-22112010\system\Database\MySQLi\Connection.php:187
+Stack trace:
+#0 D:\laragon\www\ci-berita-22112010\system\Database\MySQLi\Connection.php(187): mysqli->real_connect('localhost', 'root', '', 'db_news', 3306, '', 0)
+#1 D:\laragon\www\ci-berita-22112010\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\laragon\www\ci-berita-22112010\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\laragon\www\ci-berita-22112010\system\Database\BaseBuilder.php(1637): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\laragon\www\ci-berita-22112010\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\laragon\www\ci-berita-22112010\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\laragon\www\ci-berita-22112010\app\Controllers\Api.php(16): CodeIgniter\BaseModel->findAll()
+#7 D:\laragon\www\ci-berita-22112010\system\CodeIgniter.php(933): App\Controllers\Api->index()
+#8 D:\laragon\www\ci-berita-22112010\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#9 D:\laragon\www\ci-berita-22112010\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\laragon\www\ci-berita-22112010\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 D:\laragon\www\ci-berita-22112010\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\laragon\www\ci-berita-22112010\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 D:\laragon\www\ci-berita-22112010\system\Commands\Server\rewrite.php(49): require_once('D:\\laragon\\www\\...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\laragon\www\ci-berita-22112010\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 D:\laragon\www\ci-berita-22112010\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\laragon\www\ci-berita-22112010\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\ci-berita-22112010\system\Database\BaseBuilder.php(1637): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\laragon\www\ci-berita-22112010\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\laragon\www\ci-berita-22112010\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\laragon\www\ci-berita-22112010\app\Controllers\Api.php(16): CodeIgniter\BaseModel->findAll()
+#6 D:\laragon\www\ci-berita-22112010\system\CodeIgniter.php(933): App\Controllers\Api->index()
+#7 D:\laragon\www\ci-berita-22112010\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#8 D:\laragon\www\ci-berita-22112010\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\laragon\www\ci-berita-22112010\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 D:\laragon\www\ci-berita-22112010\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\laragon\www\ci-berita-22112010\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\laragon\www\ci-berita-22112010\system\Commands\Server\rewrite.php(49): require_once('D:\\laragon\\www\\...')
+#13 {main}
+CRITICAL - 2024-07-01 01:28:18 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: api]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1637): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `posting`
+ORDER BY `id` DESC', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Api.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Api->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('D:\\laragon\\www\\ci-berita-22112010\\public\\index.php')
+ERROR - 2024-07-01 01:32:13 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\laragon\www\ci-berita-22112010\system\Database\MySQLi\Connection.php:187
+Stack trace:
+#0 D:\laragon\www\ci-berita-22112010\system\Database\MySQLi\Connection.php(187): mysqli->real_connect('localhost', 'root', '', 'db_news', 3306, '', 0)
+#1 D:\laragon\www\ci-berita-22112010\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\laragon\www\ci-berita-22112010\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\laragon\www\ci-berita-22112010\system\Database\BaseBuilder.php(1637): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\laragon\www\ci-berita-22112010\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\laragon\www\ci-berita-22112010\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\laragon\www\ci-berita-22112010\app\Controllers\Api.php(16): CodeIgniter\BaseModel->findAll()
+#7 D:\laragon\www\ci-berita-22112010\system\CodeIgniter.php(933): App\Controllers\Api->index()
+#8 D:\laragon\www\ci-berita-22112010\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#9 D:\laragon\www\ci-berita-22112010\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\laragon\www\ci-berita-22112010\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 D:\laragon\www\ci-berita-22112010\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\laragon\www\ci-berita-22112010\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 D:\laragon\www\ci-berita-22112010\system\Commands\Server\rewrite.php(49): require_once('D:\\laragon\\www\\...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\laragon\www\ci-berita-22112010\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 D:\laragon\www\ci-berita-22112010\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\laragon\www\ci-berita-22112010\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\ci-berita-22112010\system\Database\BaseBuilder.php(1637): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\laragon\www\ci-berita-22112010\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\laragon\www\ci-berita-22112010\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\laragon\www\ci-berita-22112010\app\Controllers\Api.php(16): CodeIgniter\BaseModel->findAll()
+#6 D:\laragon\www\ci-berita-22112010\system\CodeIgniter.php(933): App\Controllers\Api->index()
+#7 D:\laragon\www\ci-berita-22112010\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#8 D:\laragon\www\ci-berita-22112010\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\laragon\www\ci-berita-22112010\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 D:\laragon\www\ci-berita-22112010\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\laragon\www\ci-berita-22112010\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\laragon\www\ci-berita-22112010\system\Commands\Server\rewrite.php(49): require_once('D:\\laragon\\www\\...')
+#13 {main}
+CRITICAL - 2024-07-01 01:32:13 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: api]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1637): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `posting`
+ORDER BY `id` DESC', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Api.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Api->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('D:\\laragon\\www\\ci-berita-22112010\\public\\index.php')
+ERROR - 2024-07-01 01:33:53 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\laragon\www\ci-berita-22112010\system\Database\MySQLi\Connection.php:187
+Stack trace:
+#0 D:\laragon\www\ci-berita-22112010\system\Database\MySQLi\Connection.php(187): mysqli->real_connect('localhost', 'root', '', 'db_news', 3306, '', 0)
+#1 D:\laragon\www\ci-berita-22112010\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\laragon\www\ci-berita-22112010\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\laragon\www\ci-berita-22112010\system\Database\BaseBuilder.php(1637): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\laragon\www\ci-berita-22112010\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\laragon\www\ci-berita-22112010\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\laragon\www\ci-berita-22112010\app\Controllers\Api.php(16): CodeIgniter\BaseModel->findAll()
+#7 D:\laragon\www\ci-berita-22112010\system\CodeIgniter.php(933): App\Controllers\Api->index()
+#8 D:\laragon\www\ci-berita-22112010\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#9 D:\laragon\www\ci-berita-22112010\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\laragon\www\ci-berita-22112010\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 D:\laragon\www\ci-berita-22112010\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\laragon\www\ci-berita-22112010\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 D:\laragon\www\ci-berita-22112010\system\Commands\Server\rewrite.php(49): require_once('D:\\laragon\\www\\...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\laragon\www\ci-berita-22112010\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 D:\laragon\www\ci-berita-22112010\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\laragon\www\ci-berita-22112010\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon\www\ci-berita-22112010\system\Database\BaseBuilder.php(1637): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\laragon\www\ci-berita-22112010\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\laragon\www\ci-berita-22112010\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\laragon\www\ci-berita-22112010\app\Controllers\Api.php(16): CodeIgniter\BaseModel->findAll()
+#6 D:\laragon\www\ci-berita-22112010\system\CodeIgniter.php(933): App\Controllers\Api->index()
+#7 D:\laragon\www\ci-berita-22112010\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#8 D:\laragon\www\ci-berita-22112010\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\laragon\www\ci-berita-22112010\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 D:\laragon\www\ci-berita-22112010\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\laragon\www\ci-berita-22112010\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\laragon\www\ci-berita-22112010\system\Commands\Server\rewrite.php(49): require_once('D:\\laragon\\www\\...')
+#13 {main}
+CRITICAL - 2024-07-01 01:33:53 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: api]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1637): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `posting`
+ORDER BY `id` DESC', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Api.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Api->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('D:\\laragon\\www\\ci-berita-22112010\\public\\index.php')
